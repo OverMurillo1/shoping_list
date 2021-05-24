@@ -1,0 +1,24 @@
+<script src="../header/mobileMenu.js"></script>
+
+<nav class="navbar is-success" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" routerLink="/">
+        <img src="" width="112" height="28" alt="Tabla">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" #navBurger (click)="toggleNavbar()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu" #navMenu>
+      <div class="navbar-start">
+
+        <a routerLink="/" class="navbar-item">Inicio</a>
+        <a routerLink="/add" class="navbar-item">Nuevo Articulo</a>
+
+      </div>
+    </div>
+  </nav>

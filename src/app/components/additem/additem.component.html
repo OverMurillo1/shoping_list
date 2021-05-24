@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="field">
+        <div class="box">
+            <form action="" (ngSubmit)="onSubmit()">
+                <h2 class="title is-3 texto">Nuevo Articulo</h2>
+                    <label for="">Id del articulo</label>
+                    <div class="control">
+                        <input type="number" name="id" id="" [(ngModel)]="id" class="input is-link" autocomplete="off" (keypress)="onKeyPress($event)" min="0">
+                    </div>
+                    <label for="">Nombre del articulo</label>
+                    <div class="control">
+                        <input type="text" name="title" id="" [(ngModel)]="title" class="input is-link" autocomplete="off">
+                    </div>
+                    <label for="">Precio</label>
+                    <div>
+                        <input type="number" name="price" id="" [(ngModel)]="price" class="input is-link" autocomplete="off" (keypress)="onKeyPress($event)" min="1">
+                    </div>
+                    <label for="">Cantidad</label>
+                    <div class="control">
+                        <input type="number" name="quantity" id="" [(ngModel)]="quantity" class="input is-link" autocomplete="off" (keypress)="onKeyPress($event)" min="1">
+                    </div>
+                <input type="submit" value="Crear" class="button is-success boton">
+            </form>
+        </div>
+    </div>
+</div>
